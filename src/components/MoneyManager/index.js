@@ -1,4 +1,4 @@
-import Component from 'react'
+import {Component} from 'react'
 
 import {v4} from 'uuid'
 
