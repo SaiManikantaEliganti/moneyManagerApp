@@ -111,7 +111,7 @@ class MoneyManager extends Component {
   }
 
   render() {
-    const {titleInput, amountInput, optionId} = this.state
+    const {titleInput, amountInput, optionId, transactionList} = this.state
     const balanceAmount = this.getBalanceAmount()
     const expensesAmount = this.getExpenses()
     const incomeAmount = this.getIncome()
@@ -188,7 +188,7 @@ class MoneyManager extends Component {
                     <p className="table-header-cell">Amount</p>
                     <p className="table-header-cell">Type</p>
                   </li>
-                  {this.transactionList.map(eachTransaction => (
+                  {transactionList.map(eachTransaction => (
                     <TransactionItem
                       key={eachTransaction.id}
                       transactionDetails={eachTransaction}
